@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbots - كيف تجيب روبوتات الدردشة على أسئلة المستخدم؟</title>
+    <style>
+        body { font-family: 'Tahoma', Arial, sans-serif; background: #f0f2f5; margin: 0; padding: 20px; line-height: 1.9; color: #222; }
+        .container { max-width: 850px; margin: auto; background: white; padding: 35px; border-radius: 15px; box-shadow: 0 0 20px #ddd; }
+        h1 { text-align: center; color: #0b5394; font-size: 28px; }
+        h2 { color: #0b5394; border-bottom: 2px solid #0b5394; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #333; }
+        .info { text-align: center; background: #e3f2fd; padding: 15px; border-radius: 10px; margin: 20px 0; }
+        .info p { margin: 5px; }
+        img { width: 100%; border-radius: 12px; margin: 15px 0; }
+        .caption { text-align: center; color: #666; font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
+        th { background: #0b5394; color: white; }
+        tr:nth-child(even) { background: #f2f2f2; }
+        .box { background: #fff3cd; padding: 15px; border-radius: 10px; border-right: 5px solid #ffc107; margin: 15px 0; }
+        footer { text-align: center; margin-top: 25px; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 1. العنوان وبيانات الطالب -->
+    <h1>Internet Applications and Electronic Platforms<br>Chatbots - How They Answer User Questions</h1>
+    <div class="info">
+        <p><strong>Prepared by:</strong> Mariam Ali Ragab Mohamed</p>
+        <p><strong>Student ID:</strong> 2500804</p>
+        <p><strong>Business Administration</strong></p>
+        <p><strong>Academic Year:</strong> 2026 / 2027</p>
+    </div>
+
+    <!-- 2. المقدمة -->
+    <h2>المقدمة</h2>
+    <p>تعتبر روبوتات الدردشة أو ما يسمى بـ <strong>Chatbots</strong> واحدة من أهم وأبرز تطبيقات الإنترنت والمنصات الإلكترونية في العقد الأخير. بدأت الفكرة منذ عام <strong>1966</strong> عندما طور العالم جوزيف وايزنباوم في معهد <strong>MIT</strong> أول روبوت دردشة في التاريخ وهو برنامج <strong>ELIZA</strong> الذي كان يحاكي طبيب نفسي بطريقة بسيطة تعتمد على إعادة صياغة كلام المستخدم.</p>
+    <p>بعد ذلك ظهر برنامج <strong>ALICE</strong> عام 1995 ثم تطور الأمر بشكل كبير بعد ثورة الذكاء الاصطناعي. اليوم أصبحنا نتعامل يومياً مع روبوتات متطورة جداً مثل <strong>ChatGPT</strong> من شركة OpenAI و <strong>Gemini</strong> من جوجل و <strong>Meta AI</strong> على الواتساب والفيسبوك.</p>
+    <p>في مجال إدارة الأعمال أصبحت روبوتات الدردشة أداة استراتيجية لا غنى عنها لأنها تعمل <strong>24 ساعة بدون توقف</strong> وتقلل تكلفة خدمة العملاء بنسبة تصل إلى <strong>30%</strong> حسب دراسات IBM، وتزيد من رضا العملاء لأنها ترد فوراً. الهدف من هذا البحث هو فهم الآلية التقنية التي تجعل هذه الروبوتات تفهم سؤالنا البسيط وترد عليه بشكل يبدو إنساني.</p>
+
+    <!-- 3. الصورة -->
+    <img src="https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/e9481503-5b22-4867-b5aa-0d90639ac968.png" alt="صورة توضح كيفية عمل روبوتات الدردشة Chatbots">
+
+    <p class="caption">شكل يوضح كيف يفهم الشات بوت سؤالك ويحوله لإجابة</p>
+
+    <!-- 4. عرض الموضوع -->
+    <h2>عرض الموضوع</h2>
+    <h3>1. كيف يفهم الروبوت سؤال المستخدم؟ المراحل الثلاث</h3>
+    <p>العملية ليست سحر، بل هي <strong>3 مراحل منظمة</strong> تحدث في أقل من ثانية:</p>
+    <p><strong>أولاً: معالجة اللغة الطبيعية (Natural Language Processing - NLP):</strong> وهي مرحلة الفهم. عندما تكتبين "ما هو سعر آيفون 15 برو في مصر؟" يقوم النظام بعدة خطوات: <strong>1- التقطيع Tokenization:</strong> يقسم الجملة إلى كلمات منفصلة. <strong>2- تحديد النية Intent Classification:</strong> يفهم أن نيتك هي "الاستعلام عن سعر منتج". <strong>3- استخراج الكيانات Named Entity Recognition:</strong> يستخرج "آيفون 15 برو" كاسم منتج و "مصر" كموقع جغرافي.</p>
+    <p><strong>ثانياً: إدارة الحوار (Dialogue Management):</strong> وهي عقل الروبوت. هنا يقرر ماذا يفعل بالمعلومات التي فهمها. هل لديه الإجابة في قاعدة البيانات؟ هل يحتاج أن يتصل بخدمة خارجية API؟ هل السؤال ناقص ويحتاج سؤال توضيحي مثل "أي سعة تريدين 128 أم 256؟". هذه المرحلة هي التي تحافظ على سياق المحادثة، فلو سألتي بعدها "وما هو وزنه؟" سيفهم أن "هو" تعود على آيفون 15 برو.</p>
+    <p><strong>ثالثاً: توليد الرد (Natural Language Generation - NLG):</strong> بعد أن يجد الروبوت البيانات الخام مثل [Price: 60000 EGP, Weight: 187g] لا يرسلها كأرقام بل يحولها لجملة طبيعية: "سعر آيفون 15 برو في مصر يبدأ من 60,000 جنيه ووزنه 187 جرام". كما يختار نبرة الرد هل تكون رسمية أم ودية حسب المنصة.</p>
+
+    <h3>2. الأنواع الرئيسية لروبوتات الدردشة مع أمثلة</h3>
+    <!-- 5. الجدول -->
+    <table>
+        <tr>
+            <th>النوع</th>
+            <th>كيف يعمل؟</th>
+            <th>مثال</th>
+            <th>المميزات / العيوب</th>
+        </tr>
+        <tr>
+            <td><strong>Rule-Based Chatbots</strong><br>روبوتات القواعد</td>
+            <td>يعمل بنظام "إذا... فإن" والمبرمج يكتب كل السيناريوهات يدوياً</td>
+            <td>روبوتات صفحات فيسبوك التجارية الصغيرة</td>
+            <td>سهلة ورخيصة / لا تفهم إلا ما كُتب لها بالحرف</td>
+        </tr>
+        <tr>
+            <td><strong>AI Chatbots</strong><br>روبوتات الذكاء الاصطناعي</td>
+            <td>تعتمد على تعلم الآلة Machine Learning وتتدرب على آلاف المحادثات</td>
+            <td>إذا كتبتي "أنا متضايقة الخدمة بطيئة" يرد بتعاطف</td>
+            <td>تفهم الأخطاء والمشاعر / تتطور مع الوقت</td>
+        </tr>
+        <tr>
+            <td><strong>LLMs</strong><br>النماذج اللغوية الكبيرة</td>
+            <td>تم تدريبها على مليارات الصفحات، تتنبأ بالكلمة التالية لتكوين إجابة جديدة</td>
+            <td>ChatGPT-4 و Gemini 1.5</td>
+            <td>ردود إبداعية وبشرية / أحياناً تخترع معلومة وتسمى Hallucination</td>
+        </tr>
+    </table>
+
+    <h3>3. مثال عملي مفصل: ماذا يحدث عندما تسألين "ما هو الطقس في المنصورة اليوم؟"</h3>
+    <div class="box">
+        <p><strong>1- التحليل:</strong> يفهم النية "معرفة الطقس" والكيان "المنصورة" والزمن "اليوم".</p>
+        <p><strong>2- الاتصال الخارجي:</strong> يتصل عبر <strong>API</strong> مثل OpenWeatherMap API للحصول على بيانات حقيقية لحظية.</p>
+        <p><strong>3- المعالجة:</strong> الـ API يرجع بيانات رقمية: {"temp": 28, "condition": "sunny", "humidity": 60%}</p>
+        <p><strong>4- التوليد:</strong> يحول البيانات لجملة: "الطقس في المنصورة اليوم مشمس، درجة الحرارة 28 مئوية والرطوبة 60%، مناسب للخروج."</p>
+        <p><strong>5- الذاكرة:</strong> لو سألتي بعدها "وماذا عن غداً؟" لن يسألك عن المدينة مرة أخرى لأنه حفظها في الذاكرة المؤقتة للسياق.</p>
+    </div>
+
+    <h2>الخاتمة والمستقبل</h2>
+    <p>في الختام، روبوتات الدردشة تحولت من مجرد أداة للرد الآلي إلى منصات إلكترونية ذكية متكاملة تقدم خدمات البيع والدعم الفني والتعليم. في مجال إدارة الأعمال، المستقبل هو الروبوتات التي لا ترد فقط بل تنفذ مهام: تحجز لك طيران، تكتب لك إيميل، تحلل لك مبيعات الشركة.</p>
+    <p>التحديات القادمة هي ضمان دقة المعلومات ومنع التحيز وحماية خصوصية بيانات المستخدمين في مصر والعالم. الشركات التي ستتبنى هذه التقنية مبكراً هي التي ستتفوق في المنافسة.</p>
+
+    <!-- 6. المراجع -->
+    <h2>المراجع والمصادر</h2>
+    <ul>
+        <li><a href="https://www.ibm.com/topics/chatbots" target="_blank">IBM - What is a Chatbot? 2024</a></li>
+        <li><a href="https://cloud.google.com/dialogflow" target="_blank">Google Cloud - Conversational AI and Chatbot Architecture</a></li>
+        <li><a href="https://openai.com/chatgpt" target="_blank">OpenAI - How ChatGPT Works Documentation</a></li>
+        <li><a href="https://www.coursera.org/learn/natural-language-processing" target="_blank">موقع Coursera - Natural Language Processing Course</a></li>
+        <li><a href="https://www.google.com/search?q=تطبيقات+الذكاء+الاصطناعي+والمنصات+الرقمية+د+أحمد+صقر" target="_blank">كتاب تطبيقات الذكاء الاصطناعي والمنصات الرقمية، د. أحمد صقر، 2024</a></li>
+    </ul>
+
+    <footer>
+        <p>تم إعداد هذه الصفحة كجزء من تكليف Task 2 - تطبيقات الإنترنت والمنصات الإلكترونية</p>
+        <p>Mariam Ali Ragab Mohamed - 2500804</p>
+    </footer>
+
+</div>
+</body>
+  </html>
